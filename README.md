@@ -1,21 +1,24 @@
-# AI-Powered Smart Traffic Light System 🚦
+# Density-based Traffic Light Controller 🚦
 
-A real-time traffic control system using Python, OpenCV, and YOLOv11 to detect vehicle density and dynamically adjust traffic light durations. Built as part of a 3-member project.
+A smart traffic light simulation that adjusts signal timing based on real-time traffic density using Arduino and Python.
 
-## 📦 Features
-- Detects vehicle density in real time
-- Adjusts traffic signals dynamically to improve flow
-- Arduino integration for hardware control
-- Improved simulation traffic flow by ~30%
+## 🔧 Tech Stack
+- Python (Serial communication)
+- Arduino UNO (C++)
+- IR Sensors (for vehicle detection)
+- LEDs (to simulate traffic lights)
 
-## ⚙️ Technologies
-- Python
-- OpenCV
-- YOLOv11
-- Arduino
+## 🧠 How It Works
+- IR sensors detect vehicle presence in each lane.
+- Arduino reads sensor inputs and sends traffic density data over serial.
+- Python script receives data and adjusts light duration accordingly.
+- Mimics a real-world, adaptive traffic light system.
 
-## 🚀 How to run
-1. Clone this repo
-2. Install dependencies:  
-```bash
-pip install -r requirements.txt
+## 🛠️ Setup Instructions
+
+### Arduino
+1. Upload `arduino.ino` to your Arduino UNO using Arduino IDE.
+2. Connect IR sensors and LEDs according to the diagram below.
+
+### Python
+1. Install dependencies:
